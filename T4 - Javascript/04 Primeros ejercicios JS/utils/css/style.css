@@ -1,0 +1,21 @@
+#primerEjercicio{
+    background-color: antiquewhite;
+}
+#segundoEjercicio{
+    background-color: rgba(0, 255, 255, 0.473);
+}
+#tercerEjercicio{
+    background-color: rgba(0, 128, 0, 0.253);
+}
+#cuartoEjercicio{
+    background-color: rgba(137, 43, 226, 0.363);
+}
+#quintoEjercicio{
+background-color: rgba(165, 42, 42, 0.555);
+}
+.numRandom{
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    color: red;
+}

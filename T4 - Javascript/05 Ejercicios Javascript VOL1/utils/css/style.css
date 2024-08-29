@@ -1,0 +1,44 @@
+.ejercicioUno{
+    background-color: beige;  
+}
+
+.ejercicioDos{
+    margin-left: 2px;
+    background-color: rgb(127, 255, 133);
+    color:blue;
+    font-weight: bolder;
+}
+.ejercicioTres{
+    margin-bottom: 20px;
+}
+.ejercicioCuatro{
+    background-color: rgba(137, 43, 226, 0.411);
+}
+
+.ejercicioCuatro input{
+    margin: 7px 0 ;
+
+}
+
+.ejercicioCinco{
+    background-color: rgba(127, 255, 212, 0.452);
+    height: 150px;
+}
+.parrafoCelsius{
+    margin-bottom: 0;
+}
+#inputCelsius{
+    width: 70px;
+    height: 20px;
+}
+
+.button{
+    margin: 25px 25px 30px 0;
+    border-radius: 5px;
+    border: 0.5px solid black;
+
+}
+
+.button:hover{
+    background-color: rgba(0, 255, 255, 0.5);
+}

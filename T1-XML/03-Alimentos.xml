@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alimentos>
+    <legumbres>
+        <garbanzos tipo="cocido" calorias="1090">Garbanzos</garbanzos>
+        <lentejas tipo="estofadas" calorias="690">Lentejas</lentejas>
+        <!-- Aqui se englobarian las legumbres, sus tipos y calorias-->
+    </legumbres>
+    <verduras>
+        <esparragos tipo="blancos" calorias="15">Espárragos</esparragos>
+        <pimientos tipo="asados" calorias="55">Pimientos</pimientos>
+                <!-- Aqui se englobarian las verduras, sus tipos y calorias-->
+    </verduras>
+    <pescados>
+        <calamares tipo="fritos" calorias="118">Calamares</calamares>
+        <anchoas tipo="en_aceite" calorias="185">Anchoas</anchoas>
+                <!-- Aqui se englobarian los pescados, sus tipos y calorias-->
+    </pescados>
+    <aperitivos>
+        <almendras tipo="fritas" calorias="589">Almendras</almendras>
+        <ensaladilla tipo="rusa" calorias="152">Ensaladilla</ensaladilla>
+                <!-- Aqui se englobarian los aperitivos, sus tipos y calorias-->
+    </aperitivos>
+    <frutas>
+        <aguacate tipo="fresco" calorias="136">Aguacate</aguacate>
+        <platano tipo="fresco" calorias="84">Plátano</platano>
+                <!-- Aqui se englobarian las frutas, sus tipos y calorias-->
+    </frutas>
+    <carnes>
+        <ternera tipo="escalope" calorias="326">Ternera</ternera>
+        <cordero tipo="asado" calorias="575">Cordero</cordero>
+                <!-- Aqui se englobarian las carnes, sus tipos y calorias-->
+    </carnes>
+    <bebidas>
+        <cubalibre tipo="ron" calorias="327">Cubalibre</cubalibre>
+        <cerveza tipo="negra" calorias="110">Cerveza</cerveza>
+                <!-- Aqui se englobarian las bebidas, sus tipos y calorias-->
+    </bebidas>
+    <varios>
+        <raviolis tipo="carne" calorias="536">Raviolis</raviolis>
+        <canelones tipo="pollo" calorias="780">Canelones</canelones>
+                <!-- Aqui se englobarian el resto de alimentos, sus tipos y calorias-->
+
+    </varios>
+</alimentos>

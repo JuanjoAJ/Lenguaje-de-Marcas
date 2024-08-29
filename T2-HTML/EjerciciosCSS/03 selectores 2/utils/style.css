@@ -1,0 +1,33 @@
+.teal{
+    color: teal;
+}
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+.orange{
+    color: orange;
+}
+.purple{
+    color: purple;
+}
+.olive{
+    color:olive;
+}
+.fuchsia{
+    color:fuchsia
+}
+.green{
+    color: green;
+}
+td:nth-of-type(2){
+background-color: red;
+}
+td:nth-of-type(3){
+    background-color: green;
+}
+td:nth-of-type(4){
+    background-color: blue;
+}

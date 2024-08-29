@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso de JS</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <main class="container-fluid">
+        <h1>Repaso de JS y HTML</h1>
+        <p>Esta página nos valdrá para poder ver cuales son las cosas más importantes de JS y su asociación con HTML</p>
+        <div class=" d-flex flex-column col-12 justify-content-center align-items-center">
+            <input type="text" placeholder="introduce el nombre que quieras" id="inputSaludo"
+                class="form-control col-sm-12">
+
+            <select name="" id="select-opciones">
+
+                <option value="" style="text-align: center;"> - </option>
+                <option value="op1">Opción 1</option>
+                <option value="op2">Opción 2</option>
+                <option value="op3">Opción 3</option>
+                <option value="op4">Opción 4</option>
+
+            </select>
+            <button onclick="pulsacion()" class="btn btn-primary" id="botonIniciar">Pulsa para
+                iniciar</button>
+        </div>
+        <p id="parrafoSaludo"></p>
+    </main>
+    <section>
+        <h2>Saludos
+        </h2>
+        <ul id="listado"></ul>
+    </section>
+
+    <!--Script y BootstrapScript-->
+    <script src="./utils/javascript/gestion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

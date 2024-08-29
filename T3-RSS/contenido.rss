@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>
+            Contenidos de la asignatura de LMySGE
+        </title>
+        <link>
+            https://www.ue.com/lm
+        </link>
+        <description>
+            Este rss se utiliza para mostrar todas las noticias que se publican en la asignatura
+        </description>
+        <language>
+            Español
+        </language>
+        <item>
+            <title>
+                Tema 1: Introducción
+            </title>
+            <description>
+                La noticia del tema 1 es como poder crear y entender como funciona un fichero XML
+            </description>
+
+           <link>
+            https://www.ue.com/lm/tema1/n1
+           </link>
+           <guid>1.1</guid>
+        </item>
+        <item>
+            <title>
+                Tema 1: XML
+            </title>
+            <description>
+                La noticia del tema 1 es como poder crear y entender como funciona un fichero XML y formatearlo de forma adecuada
+            </description>
+           <link>
+            https://www.ue.com/lm/tema1/n2
+           </link>
+           <guid>1.2</guid>
+        </item>
+        <item>
+            <title>
+                Tema 2: HTML y CSS
+            </title>
+            <description>
+                La noticia del tema 2 es como poder crear y entender como funciona un fichero HTML y CSS
+            </description>
+           <link>
+            https://www.ue.com/lm/tema2
+           </link>
+           <guid>2</guid>
+           </item>
+    </channel>
+</rss>

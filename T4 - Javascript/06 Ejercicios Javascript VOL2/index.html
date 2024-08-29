@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Javascript vol.2</title>
+    <link rel="stylesheet" href="./utils/css/style.css">
+</head>
+
+<body>
+    <header class="container text-center">
+        <h1>Ejercicios Javascript vol2</h1>
+    </header>
+    <main>
+        <section>
+            <form action="./segundoEjercicio.html" method="post" id="form">
+                <fieldset>
+                    <legend>Registro</legend>
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="surname">Apellido:</label>
+                        <input type="text" id="surname"><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pass">Password:</label>
+                        <input type="password" name="pass" id="pass">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Comentarios:</label>
+                        <textarea name="" id="comment" maxlength="50" cols="54" rows="10"></textarea>
+                    </div>
+                    <div class="form-group-acepto">
+                        <input type="checkbox" name="" id="accept">
+                        <label for="accept" class="acepto">Acepto las condiciones del servicio</label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="enviarInp">Enviar</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./utils/js/01 form.js"></script>
+</body>
+
+</html>

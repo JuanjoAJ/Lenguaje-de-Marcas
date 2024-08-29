@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica JS</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./utils/css/style.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-center">Primeros ejercicios de Javascript</h1>
+    </header>
+    <main>
+
+        <section id="primerEjercicio"
+            class="primerEjercicio container-fluid d-flex flex-column justify-content-center align-items-center">
+            <h2 class="text-center m-2"> Ejercicio 1 - Par/impar</h2>
+            <input type="number" class="form-control mt-2 text-end" id="inputPar">
+            <button class="btn btn-primary m-3 rounded-circle text-center p-1" style="width: 60px; height: 60px;"
+                id="inputButton">Enviar</button>
+            <div id="result">
+            </div>
+            <br>
+        </section>
+        <section id="segundoEjercicio"
+            class="segundoEjercicio container-fluid d-flex flex-column justify-content-center align-items-center">
+            <h2>Segundo ejercicio</h2>
+            <button class="btn btn-primary m-3" id="inputButtonDos">Comprobar los 20 primeros números</button>
+            <ul class="list-group" id="listaPar">
+
+            </ul>
+            <br>
+        </section>
+
+        <section id="tercerEjercicio"
+            class="container-fluid d-flex flex-column justify-content-center align-items-center">
+            <h2>
+                Tercer ejercicio
+            </h2>
+            <button class="btn btn-danger m-3" id="buttonPromt"> Comenzar ejercicio</button>
+            <div id="resultMayus fw-bolder"></div>
+            <br>
+        </section>
+        <section id="cuartoEjercicio"
+            class="container-fluid d-flex flex-column justify-content-center align-items-center">
+            <h2> Cuarto ejercicio</h2>
+            <input type="text" id="inputReplace" class="form-control">
+            <div id="resultReplace" class="fst-italic"></div>
+            <button class="btn btn-warning m-3" id="buttonReplace">Transformar</button>
+        </section>
+        <section id="quintoEjercicio"
+            class="container-fluid d-flex flex-column justify-content-center align-items-center">
+            <h2>Quinto ejercicio</h2>
+            <input type="text" id="numRandom" class="numRandom form-control text-center" readonly>
+            <div id="resultRandom">
+                <p id="resultTitle" class="fw-bolder"></p>
+                <p id="listadoNum"></p>
+            </div>
+            <button id="generador" class="btn btn-dark mb-3">Generador de números aleatorios</button>
+
+        </section>
+    </main>
+    <script src="./utils/JS/01 parImpar.js"></script>
+    <script src="./utils/JS/02 primerPar.js"></script>
+    <script src="./utils/JS/03 mayusMinus .js"></script>
+    <script src="./utils/JS/04 replace.js"></script>
+    <script src="./utils/JS/05 numRandom.js"></script>
+</body>
+
+</html>

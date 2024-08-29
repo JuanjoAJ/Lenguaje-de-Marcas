@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight {
+            background-color: rgba(127, 255, 212, 0.575);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Segundo Ejercicio Eventos de Teclado y Foco</h1>
+    </header>
+    <main>
+        <form>
+            <label for="inputText">Escribe algo:</label>
+            <input type="text" id="inputText" onkeypress="showKeyPress(event)" onkeyup="showKeyUp(event)"
+                onfocus="highlight(this)" onblur="removeHighlight(this)">
+            <br><br>
+            <label for="textarea">Selecciona texto:</label>
+            <textarea id="textarea" onselect="showSelect(event)" onfocus="highlight(this)"
+                onblur="removeHighlight(this)"></textarea>
+        </form>
+        <p id="output" onclick="clearOutput(this)"></p>
+    </main>
+
+    <script>
+        function showKeyPress(event) {
+            document.getElementById('output').textContent = 'Tecla presionada: ' + event.key;
+        }
+
+        function showKeyUp(event) {
+            document.getElementById('output').textContent = 'Tecla liberada: ' + event.key;
+        }
+
+        function highlight(element) {
+            element.classList.add('highlight');
+        }
+
+        function removeHighlight(element) {
+            element.classList.remove('highlight');
+        }
+
+        function showSelect(event) {
+            const textarea = event.target;
+            const selectedText = textarea.value.substring(textarea.selectionStart, textarea.selectionEnd);
+            document.getElementById('output').textContent = 'Texto seleccionado: ' + selectedText;
+        }
+
+        function clearOutput(element) {
+            document.getElementById('output').textContent = "";
+        }
+    </script>
+</body>
+
+</html>

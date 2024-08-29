@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Uso de html con css inline-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera Página - Elementos de formato</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="font-size: 3em;">Ejercicios de elemento de formato</h1>
+    </header>
+
+    <main>
+        <div>
+            <h1>Ejemplo: elementos de formato</h1>
+            <p>Muestra un texto en <b>negrita</b>, <i>cursiva</i> y <u>subrayado</u>.</p>
+            <blockquote>Un ejemplo de nota, al cual se le añade un sangrado o margen por la izquierda.</blockquote>
+            <hr>
+            <h2>Otro encabezado</h2>
+            <p>Ejemplo con superíndices (E=mc<sup>2</sup>) y subíndices (CO<sub>2</sub>)</p>
+        </div>
+        <br><br>
+        <div>
+            <h1>Ejemplo de listas</h1>
+            <h2>Ejemplo de lisa ordenada: Tareas pendientes</h2>
+            <ul>
+                <li>Hacer la compra</li>
+                <li>Ordenar papeles</li>
+                <li>Contestar correos</li>
+            </ul>
+            <h2>Ejemplo de lista ordenada: Prioridades</h2>
+            <ol>
+                <li>Contestar correos</li>
+                <li>Hacer la compra</li>
+                <li>Ordenar papeles</li>
+            </ol>
+            <h2>Ejemplo de lista de descripción: Detalles</h2>
+            <dl>
+                <dt>Contestar correos</dt>
+                <dd>Importante el correo pendiente al tutor</dd>
+                <dt>Hacer la compra</dt>
+                <dd>No queda leche, huevos y el pan</dd>
+                <dt>Ordenar papeles</dt>
+                <dd>Los apuntes de lenguaje de marcas</dd>
+            </dl>
+        </div>
+        <br><br>
+        <div style="display: flex; flex-direction: column;">
+            <h1>Ejemplo de tablas </h1>
+            <h3>Menu del comedor</h3>
+            <table border="1">
+                <thead>
+                    <th>Plato</th>
+                    <th>Opciones</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Primero</td>
+                        <td>
+                            <ol>
+                                <li>Ensalada</li>
+                                <li>Lentejas</li>
+                                <li>Macarrones</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Segundo
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Pescado</li>
+                                <li>Pollo</li>
+                                <li>Arroz</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Postre</td>
+                        <td>
+                            <ol>
+                                <li>Yogur</li>
+                                <li>Fruta</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr></tr>
+                </tbody>
+            </table>
+        </div>
+        <br><br>
+        <div>
+            <table border="1">
+                <colgroup span="2" style="background-color: rgba(74, 254, 200, 0.781)"></colgroup>
+                <colgroup span="3" style="background-color: rgba(146, 254, 222, 0.781)"></colgroup>
+                <thead style="background-color: rgba(0, 255, 179, 0.781)">
+                    <th>Cabecera </th>
+                    <th>Cabecera 2</th>
+                    <th>Cabecera 3</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fila 1.1</td>
+                        <td>Fila 1.2</td>
+                        <td rowspan="2 "> Fila 1.3</td>
+                    </tr>
+                    <tr>
+                        <td>Fila 2.1</td>
+                        <td>Fila 2.2</td>
+                    </tr>
+                    <tr>
+                        <td>Fila 3.1</td>
+                        <td>Fila 3.2</td>
+                        <td>Fila 3.3</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Resultado final</td>
+                        <td>Final</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <span>
+            <h1>Ejemplo de formularios</h1>
+        </span>
+        <form action="">
+            <h2>Ejemplo de utilización de formulario sencillo</h2>
+            <label for=""><b>Introducción de contraseña</b></label><br><br>
+            <label>Nombre: </label>
+            <input type="text" style="margin: 10px;"><br>
+            <label>Contraseña: </label>
+            <input type="text"><br><br>
+            <button>Limpiar</button>
+            <button>Enviar</button>
+        </form>
+        <br><br>
+        <form action="" method="post">
+            <h2 style="text-align: center;">Formulario con diferentes tipos de campos</h2>
+            <label for="">Nombre</label>
+            <input type="text" name="" id="" style="margin-bottom: 10px;"><br>
+            <label for="">Apellidos</label>
+            <input type="text" name="" id="" style="margin-bottom: 10px;"><br>
+            <label for="">Fecha de nacimiento</label>
+            <input type="date" style="margin-bottom: 10px;"><br>
+            <label for="">email</label>
+            <input type="email" name="" id="" style="margin-bottom: 10px;"><br>
+            <label for="">contraseña</label>
+            <input type="text" name="" id=""><br><br>
+            <div style="display: flex; justify-content: space-between">
+                <span style="margin-right: 5%;">
+                    <label for="">Sexo</label><br>
+                    <input type="radio" name="gender" id="">
+                    <label for="">Hombre</label><br>
+                    <input type="radio" name="gender" id="">
+                    <label for="">Mujer</label> <br>
+                </span>
+                <span style="flex: 1; margin-right: 5%;">
+                    <label for="">Profesion</label> <br>
+                    <input type="radio" name="job">
+                    <label for="">Profesor</label><br>
+                    <input type="radio" name="job">
+                    <label for="">Programador</label><br>
+                    <input type="radio" name="job">
+                    <label for="">Diseñador gráfico</label>
+                </span>
+                <span style="flex: 1; margin-right: 5%;">
+                    <label for="">Aficiones</label><br>
+                    <input type="checkbox" name="hobbies">
+                    <label for="">Ciencia</label><br>
+                    <input type="checkbox" name="hobbies">
+                    <label for="">Libros</label><br>
+                    <input type="checkbox" name="hobbies">
+                    <label for="">Deportes</label>
+                </span>
+                <span style="flex: 1;"" >
+                <label for="">Elija la herramienta de diseó de web que prefiera</label><br>
+                <select>
+                    <option value=" selOption">Herramienta web</option>
+                    <option value="selOption">Otras</option>
+                    </select>
+                </span>
+            </div>
+            <br>
+            <label for="">Indique sus comentarios: </label><br>
+            <textarea name="" id="" placeholder="Comentario:" rows="4" cols="30"></textarea>
+            <br><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar todo</button>
+        </form>
+    </main>
+</body>
+
+</html>

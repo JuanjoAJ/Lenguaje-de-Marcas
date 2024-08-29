@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            margin-bottom: 15px;
+        }
+    </style>
+    <title>Formulario de registro - Mi web</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulario de registro</h1>
+    </header>
+    <main>
+        <form action="get">
+            <div><label for="name">Nombre: </label><input type="text" name="name" id="name" maxlength="50"></div>
+            <div><label for="surname">Apellidos: </label><input type="text" name="username" id="username"
+                    maxlength="50"></div>
+            <div>
+                <label for="gender">Sexo: </label>
+                <input type="radio" name="gender" id="gender">
+                <label for="man">hombre</label>
+                <input type="radio" name="gender" id="gender">
+                <label for="woman">mujer</label>
+            </div>
+            <div>
+                <label for="mail">Correo: </label>
+                <input type="text" name="mail" id="mail">
+            </div>
+            <div>
+                <label for="">Población: </label>
+                <select name="population" id="population">
+                    <option value="Alicante">Alicante</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Sevilla">Sevilla</option>
+                    <option value="Valencia">Valencia</option>
+                </select>
+
+            </div>
+            <div>
+                <label for="description">Descripción: </label>
+                <textarea name="description" id="description" cols="50" rows="5"></textarea>
+            </div>
+            <div> <input type="checkbox" checked="checked" name="info" id="info">
+                <label for="info">Deseo recibir información sobre novedades y ofertas</label>
+            </div>
+            <div>
+                <input type="checkbox" name="dpa" id="dpa">
+                <label for="dpa">Declaro haber leido y aceptar las condiciones generales del programa y la normativa
+                    sobre
+                    protección de datos</label>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

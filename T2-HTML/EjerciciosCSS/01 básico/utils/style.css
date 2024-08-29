@@ -1,0 +1,28 @@
+body{
+    background-color: #CFC;
+    color: #00F;
+    font: 16px Georgia, Cambria, serif;   
+}
+
+h1{
+    color: #F00;
+    font: 32px Verdana, Calibri, sans-serif;
+}
+
+h2{
+    color: #A00;
+    font: 24px Verdana, Calibri, sans-serif;
+}
+.lista{
+    color: #060;
+}
+.strong{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.emphasis{
+    color: white;
+    background-color: #000;
+    font-style: italic;
+}

@@ -1,0 +1,23 @@
+ul{
+    list-style-type: none;
+}
+li{
+    background-color: blue;
+    padding: 0; 
+    margin-bottom: 4px;
+    width: 100px;
+    text-align: center; 
+    
+}
+a{
+    color:white;   
+    width: 100px;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+li a:hover, li a:focus{
+   outline: solid 2px red;
+   color: white; 
+   text-decoration: underline;
+}

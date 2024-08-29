@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!-- Cuerpo-->
+ <pedido>
+    <destinatario>
+       <nombre>
+        Pedro
+       </nombre> <apellidos>
+        Martin Martínez
+       </apellidos> 
+    </destinatario>
+    <articulo tipo="Tablet">
+        <marca>
+            Samsung
+        </marca>
+        <modelo>
+            Galaxy TAB A8
+        </modelo>
+    </articulo>
+    <direccion tipo="Calle">
+        <nombre>
+            Virgen de la cruz
+        </nombre>
+        <numero>
+            2
+        </numero>
+        <piso>
+            7
+            <letra>
+                A
+            </letra>
+        </piso>
+        <localidad>
+
+        </localidad>
+    </direccion>
+    <fecha >
+        <dia>
+            17
+        </dia>
+        <mes>
+            10
+        </mes>
+        <anio>
+            2022
+        </anio>
+    </fecha>
+ </pedido>
