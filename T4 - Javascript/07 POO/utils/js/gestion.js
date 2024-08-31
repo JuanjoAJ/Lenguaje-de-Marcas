@@ -59,6 +59,19 @@ let busqueda = productos.filter((element) => {
 
 console.log(busqueda);
 
+productos.forEach((element) => {
+  seleccionCartas.innerHTML += `<div class="col m-4">
+            <div class="card" style="width: 20rem; height:20rem">
+                <img src="${element.getImagen}" class="card-img-top" alt="imagen-carta" style="width: 10rem; height:10rem; align-self:center">
+                <div class="card-body">
+                  <h5 class="card-title">${element.getNombre}</h5>
+                  <p class="card-text">${element.marca} ${element.precio}</p>
+                  <a href="#" class="btn btn-primary">Ver detalle</a>
+                </div>
+              </div>
+        </div>`;
+});
+
 selectCategoria.addEventListener("change", () => {
   let listaFiltrada = productos.filter((item) => {
     return item.categoria == selectCategoria.value.toLowerCase();
@@ -66,7 +79,7 @@ selectCategoria.addEventListener("change", () => {
   representarResultados(listaFiltrada);
   if (selectCategoria.value == "seleccione") {
     productos.forEach((element) => {
-      seleccionCartas.innerHTML += `<div class="col m-4">
+      seleccionCartas.innerHTML += `<div class="col m-4 animate__animated animate__backInDown">
                 <div class="card" style="width: 20rem; height:20rem">
                     <img src="${element.getImagen}" class="card-img-top" alt="imagen-carta" style="width: 10rem; height:10rem; align-self:center">
                     <div class="card-body">
