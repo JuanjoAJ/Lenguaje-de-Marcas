@@ -2,5 +2,6 @@
   "liveServer.settings.multiRootWorkspaceName": "Lenguaje de Marcas Práctica",
   "livePreview.customExternalBrowser": "Chrome",
   "liveServer.settings.CustomBrowser": "chrome",
-  "livePreview.openPreviewTarget": "Embedded Preview"
+  "livePreview.openPreviewTarget": "Embedded Preview",
+  "liveServer.settings.ChromeDebuggingAttachment": false
 }

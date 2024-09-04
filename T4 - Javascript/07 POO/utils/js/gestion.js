@@ -60,7 +60,10 @@ let busqueda = productos.filter((element) => {
 console.log(busqueda);
 
 productos.forEach((element) => {
-  seleccionCartas.innerHTML += `<div class="col m-4">
+  seleccionCartas.innerHTML += `<div class="col m-4  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />">
             <div class="card" style="width: 20rem; height:20rem">
                 <img src="${element.getImagen}" class="card-img-top" alt="imagen-carta" style="width: 10rem; height:10rem; align-self:center">
                 <div class="card-body">
