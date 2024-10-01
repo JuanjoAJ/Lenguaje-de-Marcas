@@ -1,0 +1,140 @@
+main{
+    background-color: rgba(0, 255, 115, 0.059);
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contacto-main{
+    background-color: rgba(0, 0, 0, 0.539);
+    height: 50rem;
+}
+.section-title{
+    font-size: 2rem;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.formLabel{
+    color: #fff;
+
+}
+.bi-house-fill{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 700px; 
+    object-fit: cover;
+  }
+
+  .contacto-title{
+    color: white;
+  }
+
+  .icons-rss a{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+.icons-rss i{
+    color: white;
+    font-size: 2rem;
+    transition: all 0.2s ease-in;
+}
+
+.icons-rss a:hover{
+    background-color: #fff;
+    border: 2px solid rgb(13, 110, 253);
+}
+.icons-rss a:hover i{
+    color: black;
+}
+
+/*Casas info*/
+
+.project{
+    padding: 40px;
+
+}
+.project img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+.project-container{
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay p{
+font-size: 25px;
+font-weight: bold;
+margin-bottom: 0;
+}
+.project{
+    position: relative;
+}
+.project:hover img{
+    opacity:0;
+}
+.project:hover .overlay{
+    opacity: 1;
+}
+
+.overlay .icons-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.overlay i{
+    color: black;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+@media screen and (max-width: 400px){
+.overlay p{
+    font-size: 18px;
+}
+
+.overlay i{
+    font-size: 1.2rem;
+}
+
+}
+
+@media screen and (max-width: 200px){
+    .overlay p{
+        font-size: 9px;
+    }
+    
+    .overlay i{
+        font-size: 0.9rem;
+    }
+    
+}
