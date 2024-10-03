@@ -1,5 +1,6 @@
+/*Principal*/
 main{
-    background-color: rgba(0, 255, 115, 0.059);
+    background-color: rgba(0, 255, 115, 0.301);
 }
 section{
     display: flex;
@@ -7,32 +8,56 @@ section{
     align-items: center;
     justify-content: center;
 }
-.contacto-main{
-    background-color: rgba(0, 0, 0, 0.539);
-    height: 50rem;
-}
-.section-title{
-    font-size: 2rem;
-    padding: 15px 0;
-    text-align: center;
-}
 
-.formLabel{
-    color: #fff;
-
+/*Barra navegación*/
+.navbar {
+    background-color:  rgba(0, 255, 115, 0.301);
 }
-.bi-house-fill{
-    color: white;
+#main-nav .nav-link{
+    color: black;
+}
+.bi.bi-house-fill{
+    color: black;
     font-size: 1.5rem;
 }
 
-.carousel-item img {
-    width: 100%;
-    height: 700px; 
-    object-fit: cover;
-  }
+.navbar-toggler-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+    border: none;
+}
 
-  .contacto-title{
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon div {
+    content: '';
+    width: 24px;
+    height: 3px;
+    background-color: black;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+
+/*Página contacto*/
+.contacto-main, .nav-contacto{
+    background-color: rgba(29, 42, 69, 0.548);
+   
+}
+
+.contacto-main{
+    height: 50rem;
+}
+
+
+
+.contacto-title{
     color: white;
   }
 
@@ -61,6 +86,23 @@ section{
 .icons-rss a:hover i{
     color: black;
 }
+
+.formLabel{
+    color: #fff;
+}
+
+/*Index*/
+.carousel-item img {
+    width: 100%;
+    height: 700px; 
+    object-fit: cover;
+  }
+  .section-title{
+    font-size: 2rem;
+    padding: 15px 0;
+    text-align: center;
+}
+
 
 /*Casas info*/
 

@@ -1,0 +1,89 @@
+/*General*/
+body{
+    background-color: #0A1828;
+    color: #178582;
+    font-weight: bold;
+    
+}
+
+
+
+/*Titulo*/
+header{
+    margin: 5px 0 10px 0;
+    padding: 5px 0 30px 0;
+
+}
+.title{
+    font-family: 'IBM Plex Sans', 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/*Formulario*/
+.form{
+    border-right: 1px solid #BFA181;
+    margin-left: 7px;
+    padding-right: 1rem;
+    height: 40rem;
+    
+}
+
+label{
+    margin-right: 20px;
+}
+input{
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+label.name{
+    margin-top: 50px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    margin-top: 10px;
+    background-color: #BFA181;
+    padding: .4rem 8rem;
+    font-size: large;
+    font-weight: bold;
+    box-sizing: border-box;
+    max-width: 100%;  
+}
+.btn:hover{
+background-color: #db9e5c;
+}
+
+@media(max-width: 480px){
+    .btn{
+        padding: .4rem 2rem;
+    }
+}
+
+/*Footer*/
+
+.table{
+margin-top: 10px;
+border: #178582;
+border-top:none;
+}
+
+
+.cabecera-tabla th{
+    background-color: #BFA181;
+    height: 4rem;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+.body-td td{
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    height: 4rem;
+    font-size: 1.5rem;
+    color: #178582;  
+}

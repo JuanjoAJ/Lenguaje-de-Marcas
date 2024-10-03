@@ -1,5 +1,10 @@
 {
     "compilerOptions": {
-        "noImplicitAny": false
+        "noImplicitAny": false,
+        "forceConsistentCasingInFileNames":true,
+        "strict":true,
+        "module":"ESNext",
+        "target": "ES2017"
+
     }
 }
