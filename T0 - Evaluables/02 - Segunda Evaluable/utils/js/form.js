@@ -4,9 +4,6 @@ let lastName = document.querySelector("#inputSurname");
 let email = document.querySelector("#inputEmail");
 let jobPosition = document.querySelector("#jobPosition");
 let listWorkers = document.querySelector("#listaTrabajadores");
-let bodyTd = document.querySelector("#body-td");
-let worker = [];
-const jobs = ["IT", "marketing", "ventas", "administracion"];
 let selectedCategory = null;
 let sumaIT = 0;
 let sumaVentas = 0;
@@ -17,7 +14,8 @@ button.addEventListener("click", (e) => {
   if (
     nameWorker.value.length > 0 &&
     lastName.value.length > 0 &&
-    email.value.length > 0
+    email.value.length > 0 &&
+    email.value.includes("@")
   ) {
     if (selectedCategory != null) {
       addWorker();
