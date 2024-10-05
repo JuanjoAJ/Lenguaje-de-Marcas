@@ -1,0 +1,76 @@
+body{
+    background: #ADD8E6;
+    color: #39434c;
+}
+
+/*Header*/
+header{
+   border-bottom: 2px solid #708090;
+}
+.title h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@media(min-width:768px){
+    .title h1{
+        font-size: 4rem;
+    }
+}
+@media(min-width:1023px){
+    .title h1{
+        font-size: 5rem;
+    }
+}
+.busqueda .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .busqueda .select {
+    text-align: center;
+    border: none;
+    border-radius: 1rem;
+    margin: 1.2rem 1rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    max-width: 200px;
+  }
+  
+
+
+/*shopView*/
+.shopView{
+border-right:1px solid #708090 ;
+
+}
+
+.btnAdd{
+    margin-bottom: 3px;
+}
+
+/*shopping Cart*/
+.shoppingCartLista{
+    margin-top: 7px;
+}
+.shoppingCartLista li{
+    list-style: none;
+    background-color: #fff;
+    border-radius: 2px;
+    border: #39434c;
+    border-bottom: 1px dashed;
+   
+}
+/*Footer*/
+.copyright{
+    font-style: italic;
+    font-size: .8rem;
+    text-align: center;
+}
