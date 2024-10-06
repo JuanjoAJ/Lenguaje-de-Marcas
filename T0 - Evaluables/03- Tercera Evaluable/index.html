@@ -24,29 +24,36 @@
         <div class="title">
             <h1>La Tienda de Productos</h1>
         </div>
-        <div class="container-fluid row busqueda">
-            <div class="container ">
-                <select name="inputMin" id="inputMin" class="select form-select"" title=" Precio mínimo">
-                    <option value="0">Precio mínimo</option>
-                    <option value="10">10 €</option>
-                    <option value="30">30 €</option>
-                    <option value="50">50 €</option>
-                    <option value="100">100 €</option>
-                    <option value="500">500 €</option>
-                </select>
-
-                <div class="container col-sm-4">
-                    <select name="inputCateg" id="inputCateg" class="select form-select"" title=" Categoria">
+        <div class="container-fluid title-main grid">
+            <div class="container busqueda g-col-4">
+                <div class="g-col-sm-2 seleccionDiv  ">
+                    <select name="inputMin" id="inputMin" class="select form-select m-4 " title=" Precio mínimo">
+                        <option value="0">Precio mínimo</option>
+                        <option value="10">10 €</option>
+                        <option value="30">30 €</option>
+                        <option value="50">50 €</option>
+                        <option value="100">100 €</option>
+                        <option value="500">500 €</option>
+                    </select>
+                </div>
+                <div class="g-col-sm-2 seleccionDiv">
+                    <select name="inputCateg" id="inputCateg" class="select form-select m-4" title=" Categoria">
                         <option value="Categoria">Categoria</option>
                     </select>
                 </div>
-                <div class="container col-sm-4">
-                    <select name="inputMarca" id="inputMarca" class="select form-select"" title=" Marca">
+                <div class="g-col-sm-2 seleccionDiv">
+                    <select name="inputMarca" id="inputMarca" class="select form-select m-4" title=" Marca">
                         <option value="Marca">Marca</option>
                     </select>
                 </div>
                 <input type="button" class="btn btn-primary m-4" id="btnFiltrar" value="Filtrar">
+
+
             </div>
+            <div class="g-col-4">
+                <img src="./images/logo.jpg" alt="logo" class="image">
+            </div>
+        </div>
     </header>
     <main>
         <div class="container-fluid row">
@@ -54,8 +61,11 @@
             </div>
             <div class="col-4 shoppingCart">
                 <ul class="shoppingCartLista" id="shoppingCart">
+                    <li class="listacompra totalCompra animate__animated animate__backInRight">
+                        <strong>Cesta de la Compra </strong>
+                    </li>
                 </ul>
-                <div class="totalPrice" id="totalPrice"></div>
+                <ul class="totalPrice" id="totalPrice"></ul>
             </div>
         </div>
     </main>

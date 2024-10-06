@@ -149,7 +149,7 @@ function addShoppingCart(product) {
   if (product && product.name && product.price) {
     const li = document.createElement("li");
     li.className = "listacompra animate__animated animate__backInRight";
-    li.textContent = `${product.name} -> ${product.price}€`;
+    li.innerHTML = `<img src="${product.image}" alt="${product.name}" class="imgCesta"> ${product.name} -> ${product.price}€`;
     shoppingCart.appendChild(li);
     addTotalPrice(product);
   } else {
@@ -180,7 +180,7 @@ function addTotalPrice(product) {
   } else {
     console.log("El producto no tiene las propiedades correctas");
   }
-  totalPrice.innerHTML = `<div>Total de compra = ${acumulativo} €</div>`;
+  totalPrice.innerHTML = `<li class="listacompra totalCompra animate__animated animate__backInRight" style="list-style: none; font-weight: bold; background-color: #fff; border-radius: 2px; border: #39434c; border-bottom: 1px dashed;">Total de compra = ${acumulativo} €</li>`;
 }
 
 function restarTotalPrice(product) {
@@ -191,5 +191,5 @@ function restarTotalPrice(product) {
   } else {
     console.log("El producto no tiene las propiedades correctas");
   }
-  totalPrice.innerHTML = `<div>Total de compra = ${acumulativo} €</div>`;
+  totalPrice.innerHTML = `<li class="listacompra totalCompra animate__animated animate__backInRight" style="list-style: none; font-weight: bold; background-color: #fff; border-radius: 2px; border: #39434c; border-bottom: 1px dashed;">Total de compra = ${acumulativo} €</li>`;
 }

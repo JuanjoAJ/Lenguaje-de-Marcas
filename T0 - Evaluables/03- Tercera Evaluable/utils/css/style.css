@@ -24,31 +24,49 @@ header{
         font-size: 5rem;
     }
 }
-.busqueda .container {
+
+
+.busqueda {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  .busqueda .select {
-    text-align: center;
-    border: none;
-    border-radius: 1rem;
-    margin: 1.2rem 1rem;
-    width: 100%;
+}
+
+.selecciondiv {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.busqueda .select {
+    margin: 0;
+    width: auto;
     padding: 0.5rem 1rem;
     box-sizing: border-box;
-    max-width: 200px;
-  }
-  
+    max-width: 150px;
+    min-width: 150px;
+}
+
+.busqueda{
+    flex-wrap: wrap;
+}
+
+.image{
+    border-radius: 50%;
+    width: 200px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    
+}
+
+.title-main{
+    display: flex;
+}
 
 
 /*shopView*/
 .shopView{
 border-right:1px solid #708090 ;
+background-color: #fff;
 
 }
 
@@ -61,12 +79,22 @@ border-right:1px solid #708090 ;
     margin-top: 7px;
 }
 .shoppingCartLista li{
+
     list-style: none;
     background-color: #fff;
     border-radius: 2px;
     border: #39434c;
     border-bottom: 1px dashed;
+    text-align: center;
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
    
+}
+.totalPrice{
+    margin-top: -15px;
+}
+
+.imgCesta{
+    width: 3rem;
 }
 /*Footer*/
 .copyright{
